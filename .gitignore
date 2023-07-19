@@ -5,3 +5,5 @@ package-lock.json
 test/
 dev-config.js
 dev-data.json
+
+.idea
