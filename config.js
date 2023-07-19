@@ -5,7 +5,7 @@ module.exports = {
     //Your bot data
     bot: {
         //PASTE YOUR DISCORD BOT TOKEN IN DATA.JSON FILE (more secure) - https://tinyurl.com/discordbot-token
-        prefix: "", //Your custom prefix of the bot, like "!" or "."
+        prefix: process.env.PREFIX, //Your custom prefix of the bot, like "!" or "."
         presence: "", //Custom activity/status text
         status: "",  //You can choose: ONLINE, IDLE, DND (do not disturb), INVISIBLE
         activity: "", //You can choose: PLAYING, LISTENING, WATCHING, COMPETING
@@ -16,7 +16,7 @@ module.exports = {
     server: {
         name: "", //Your server name
         type: "", //"java" or "bedrock"
-        ip: "", //IP of your server - do not include port - e.g. "mc.hypixel.net"
+        ip: process.env.IP, //IP of your server - do not include port - e.g. "mc.hypixel.net"
         port: "", //PORT of your server - empty => default port (JA 25565, BE 19132)
         icon: "", //Link to icon - like "https://website.com/icon.png"
         version: "", //Minecraft version of sever
