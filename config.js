@@ -4,6 +4,7 @@
 module.exports = {
     //Your bot data
     bot: {
+        token: process.env.TOKEN,
         //PASTE YOUR DISCORD BOT TOKEN IN DATA.JSON FILE (more secure) - https://tinyurl.com/discordbot-token
         prefix: process.env.PREFIX, //Your custom prefix of the bot, like "!" or "."
         presence: "", //Custom activity/status text
